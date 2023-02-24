@@ -1,4 +1,4 @@
 LOGIN = {
-    "USERNAME_TEXTBOX": "css:div#divUsername>span.form-hint",
-    "PASSWORD_TEXTBOX": ""
+    "USERNAME_TEXTLABEL": "xpath://label[normalize-space()='Username']",
+    "PASSWORD_TEXTLABEL": "xpath://label[normalize-space()='Password']"
 }

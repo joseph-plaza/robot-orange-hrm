@@ -6,13 +6,13 @@ Variables    ../../output/LoginSpiels.py
 
 
 *** Keywords ***
-I'm on the login page
+Navigate to login page
     go to    ${BASE_URL.${ENVIRONTMENT}}
 
-I checked on the user placeholder
-    get text  css:div#divUsername>span.form-hint
-#    ${LOGIN['USERNAME_TEXTBOX']}
+Should display username label
+  wait until element is visible    ${LOGIN['USERNAME_TEXTLABEL']}
+  element should contain    ${LOGIN['USERNAME_TEXTLABEL']}    ${LOGIN_SPIELS['USERNAME_TEXTLABEL']}
 
-I should be able to get the correct placeholder label
-    element text should be  css:div#divUsername>span.form-hint    Username
-#    ${LOGIN['USERNAME_PLACEHOLDER']}
+Should display password label
+    wait until element is visible  ${LOGIN['PASSWORD_TEXTLABEL']}
+    element should contain    ${LOGIN['PASSWORD_TEXTLABEL']}    ${LOGIN_SPIELS['PASSWORD_TEXTLABEL']}

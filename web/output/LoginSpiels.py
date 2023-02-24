@@ -1,4 +1,4 @@
-LOGIN = {
-    "USERNAME_PLACEHOLDER": "Username",
-    "PASSWORD_PLACEHOLDER": "Password"
+LOGIN_SPIELS = {
+    "USERNAME_TEXTLABEL": "Username",
+    "PASSWORD_TEXTLABEL": "Password"
 }
